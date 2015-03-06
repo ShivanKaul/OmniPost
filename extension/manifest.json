@@ -3,7 +3,7 @@
 
   "name": "OmniPost",
   "description": "Search ChallengePost from your address bar.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage_url": "http://shivankaulsahib.me",
   "background": {
       "scripts": [ "src/background.js" ]
