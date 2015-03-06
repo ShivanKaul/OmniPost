@@ -57,4 +57,4 @@ function navigate(inputString) {
 // Reacting to users entering "@" in the omnibox
 chrome.omnibox.onInputChanged.addListener(suggest); // support suggestions queried from ChallengePost
 chrome.omnibox.onInputEntered.addListener(navigate);
-chrome.omnibox.setDefaultSuggestion({"description" : "Search ChallengePost for '%s'});
+chrome.omnibox.setDefaultSuggestion({"description" : "Search ChallengePost for '%s'"});
