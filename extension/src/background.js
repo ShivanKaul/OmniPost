@@ -53,10 +53,16 @@ function suggest(inputString, suggestions) {
 			var num = Math.min(3, software.length); // a maximum of 3 suggestions
 			for (i = 0; i < num; i++) {
 				var name = software[i].name;
+				var desc = software[i].tagline;
+
+				// If no tagline, remove the null
+				if  (desc == null) { desc="" ;}
+				// Else, add a dash to separate the description from the name
+				else {desc = " - " + desc}
 
 				softwareNames.push({
 					"content" : name, 
-					"description" : name
+					"description" : "Are you looking for: " + '<match>' + name + '</match>' + '<dim>' + desc + '</dim>'
 				});
 			}
 			suggestions(softwareNames);
