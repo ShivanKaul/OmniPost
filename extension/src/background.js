@@ -17,7 +17,6 @@ function navigate(inputString) {
 /* 
 	function suggest
 	- suggests top 3 suggestions by querying ChallengePost
-	- 
 */
 function suggest(inputString, suggestions) {
 	// suggestions is an array of SuggestResults 
@@ -35,12 +34,7 @@ function suggest(inputString, suggestions) {
 		dataType: "json",
 		statusCode: {
         	502: function () {
-        		error502 = [];
-        		error502.push({
-        			"content" : "No suggestions from ChallengePost",
-					"description" : "No suggestions from ChallengePost"
-        		});
-            	suggestions(error502);
+        		console.log("Error 502 thrown, probably because of too many AJAX calls. Try refreshing challengepost.com ")
         	}
         },
 		success: function (queryResult) {
