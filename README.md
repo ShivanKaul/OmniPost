@@ -3,7 +3,7 @@ OmniPost
 
 Search ChallengePost for projects, straight from your address box!  
 
-#### SEARCH FOR A   
+#### SEARCH FOR A PROJECT  
 If you have a specific project in mind, let's say HashMaps:
 - Type '@' in the Omnibox
 - Press Tab or Space
